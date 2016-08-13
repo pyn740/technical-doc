@@ -82,13 +82,17 @@
   ![这里写图片描述](http://img.blog.csdn.net/20151023180138405)
 
 5. Project-&gt;MyProject-&gt;Build Setting
+
   设置Precompile Prefix Header: YES
+
   并在Prefix Header中添加：
   ${SOURCE\_ROOT}\/MyProject\/PrefixHeader.pch
 
 6. Target-&gt;MyProject-&gt;Build Phases
+
   点击如下图所示左上角的“+”号，选择New Run Script Phase
   ![这里写图片描述](http://img.blog.csdn.net/20151023193513870)
+
   往其中添加：
   ![这里写图片描述](http://img.blog.csdn.net/20151023193351099)
 
@@ -96,32 +100,48 @@
   ![这里写图片描述](http://img.blog.csdn.net/20151023181535829)
 
 8. Project-&gt;MyProject-&gt;Build Setting
+
   在Other Linker Flags添加
+
   -lc++
   -weak\_framework
   CoreMotion
   -weak-lSystem
+
   在Other C Flags添加
+
   -mno-thumb
   -DINIT\_SCRIPTING\_BACKEND=1
+
   设置 C Language Dialekt：C99\[-std=c99\]
+
   设置 C++ Language Dialekt : C++ 11\[-std=c++11\]
+
   设置 C++ Standard Library : libc++ \(LLVM C++ standard Library with C++11 support\)
+
   设置 Enable Modules \(C and Objective-C\) : YES
+
   设置 Enable Bitcode : NO
 
 9. Project-&gt;MyProject-&gt;Build Setting
+
   点击如下图的“+”号，选择4个Add User-Defined Setting
   ![这里写图片描述](http://img.blog.csdn.net/20151023182715982)
+
   设置key值：GCC\_THUMB\_SUPPORT，设置Value值：NO
+
   设置key值：GCC\_USE\_INDIRECT\_FUNCTION\_CALLS，设置Value值：NO
+
   设置key值：UNITY\_RUNTIME\_VERSION，设置Value值：5.2.0f3
+
   设置key值：UNITY\_SCRIPTING\_BACKEND，设置Value值： il2cpp
 
 10. 选择Info.plist
+
   添加key值：Unity\_LoadingActivityIndicatorStyle，设置Value值：-1
 
 11. 新建一个CubeSceneViewController类，将CubeSceneViewController.m文件重命名为CubeSceneViewController.mm
+
   在main.storyboard中如下图设置：
   ![这里写图片描述](http://img.blog.csdn.net/20151023190750486)
 
