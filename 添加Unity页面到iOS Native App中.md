@@ -18,10 +18,15 @@
 5. 配置Unity中的iOS选项：
   Edit-&gt;Project Setting-&gt;Player 进入Setting for iOS
   ![这里写图片描述](http://img.blog.csdn.net/20151023170353065)
+
   Allowed Orientation for Auto Rotation: 勾掉Potrait,  Potrait Upside Down（使本应用只支持横屏）
+
   Auto Graphic API: 去掉勾，然后选择OpenGLES2
+
   Scripting Backend: IL2CPP
+
   Target Device: iPad only
+  
   Target iOS Version: 8.0
 
 6. 导出Unity生成的iOS Project
