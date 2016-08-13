@@ -91,7 +91,7 @@
 6. Target-&gt;MyProject-&gt;Build Phases
 
   点击如下图所示左上角的“+”号，选择New Run Script Phase
-  ![这里写图片描述](http://img.blog.csdn.net/20151023193513870)
+  ![](http://img.blog.csdn.net/20151023193513870)
 
   往其中添加：
   ![这里写图片描述](http://img.blog.csdn.net/20151023193351099)
@@ -143,7 +143,7 @@
 11. 新建一个CubeSceneViewController类，将CubeSceneViewController.m文件重命名为CubeSceneViewController.mm
 
   在main.storyboard中如下图设置：
-  ![这里写图片描述](http://img.blog.csdn.net/20151023190750486)
+  ![](http://img.blog.csdn.net/20151023190750486)
 
 12. 在CubeSceneViewController.h中添加
 
